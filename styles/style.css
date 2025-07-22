@@ -1,0 +1,134 @@
+* {
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.btn-primary {
+  border-radius: 8px;
+  padding: 20px 25px;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ff900e;
+}
+
+/* nav */
+.header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title {
+  font-size: 700;
+  font-size: 45px;
+  color: #131313;
+}
+
+.nav-links a {
+  color: #424242;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 30px;
+}
+.navbar,
+.header-container,
+.features {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #131313;
+}
+.header-para {
+  font-weight: 400;
+  color: #727272;
+  margin: 32px 0;
+}
+.header-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+/* features */
+.features {
+  display: flex;
+  margin-top: 85px;
+  align-items: center;
+  margin-bottom: 130px;
+}
+.feature-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.feature-img img {
+  width: 100%;
+}
+.features-container {
+  padding: 0 70px;
+}
+.features-container h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.features-container h2 #c-1 {
+  color: #727272;
+  font-weight: 400;
+}
+.features-container h2 #c-2 {
+  color: #131313;
+}
+.features-container h2 #c-3 {
+  color: #ff900e;
+}
+.features-container p {
+  font-weight: 400;
+  color: #727272;
+  margin: 24px 0 32px 0;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .header-container {
+    margin: 0 10px;
+  }
+  .header-title {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .nav-links a {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 10px;
+  }
+  .features {
+    flex-direction: column-reverse;
+    margin: 0 10px;
+  }
+  .features-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
