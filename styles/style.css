@@ -15,7 +15,8 @@
 }
 
 /* nav */
-.header {
+.header,
+.footer {
   background-color: rgba(255, 144, 14, 0.1);
 }
 .navbar {
@@ -39,7 +40,10 @@
 .navbar,
 .header-container,
 .features,
-.experience {
+.experience,
+.facts,
+.sponser,
+.footer {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -156,13 +160,80 @@
   font-size: 25px;
   font-weight: 500;
 }
+/* logos */
+.facts {
+  margin-bottom: 180px;
+}
+.facts h3 {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgb(19, 19, 19);
+  margin-bottom: 24px;
+}
+.facts p {
+  color: rgb(114, 114, 114);
+  margin-bottom: 100px;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 124px;
+  margin-bottom: 20px;
+}
+.fact-logo {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  padding: 45px 36px 56px 36px;
+}
+.fact-logo h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.fact-logo p {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #424242;
+}
+/* sponsor */
+.sponser {
+  text-align: center;
+  margin-bottom: 130px;
+}
+.sponser h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.sponser p {
+  font-weight: 400;
+  color: #727272;
+  margin-bottom: 50px;
+}
+.sponser-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  text-align: center;
+  padding: 39px 410px;
+  margin-bottom: 150px;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
   .navbar {
     flex-direction: column;
   }
   .nav-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 30px;
   }
   .header-container {
@@ -181,6 +252,10 @@
   .features {
     flex-direction: column-reverse;
     margin: 0 10px;
+  }
+  .feature-img {
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .features-container {
     text-align: center;
@@ -207,6 +282,36 @@
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
   }
   #special {
-   margin: 20px 20px;
+    margin: 20px 20px;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 124px;
+    margin-bottom: 20px;
+  }
+  .facts {
+    margin: 0 10px;
+  }
+  .sponser {
+    text-align: center;
+    margin: 10px 10px;
+  }
+  .sponser-icon {
+    text-align: center;
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+   padding-left: 60px;
+  }
+
+  .footer {
+    margin: 0 10px;
+    text-align: center;
+    padding: 39px 41px;
+    margin-bottom: 150px;
   }
 }
