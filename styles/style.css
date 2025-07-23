@@ -215,7 +215,12 @@
 }
 .sponser-icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.sponser-icon img{
+  width: 100%;
 }
 .footer {
   text-align: center;
